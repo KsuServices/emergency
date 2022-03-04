@@ -1,6 +1,6 @@
-﻿<html>
+<html>
 <head>
-  <title>崑山科技大學 停電緊急公告</title>
+  <title>崑山科大緊急公告</title>
   <script src="resources/jquery.min.js"></script>
   <script src="resources/bootstrap.min.js"></script>
   <link href="resources/bootstrap.min.css" rel="stylesheet" />
@@ -41,5 +41,32 @@
       </div>
     </div>
   </div>
+  <!-- Modal Start -->
+  <div class="modal" id="KsuModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">測試標題</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>測試訊息</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Sure</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal End -->
+  <script>
+    $(function () {
+      $("body").empty();
+      $("body").append("<h1 class=\"text-center mt-5\">網站測試中...</h1>");
+      //$('#KsuModal').modal('show');
+    });
+  </script>
 </body>
 </html>
